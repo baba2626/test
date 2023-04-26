@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLottery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>PepeLottery</h1>
+    </header>
+    <main>
+        
+            <!-- Add a new section -->
+    <section>
+        <h2>Current Prize Pool</h2>
+        <p id="currentPrizePool">0 Pepe Coin</p>
+    
+    
+            <h2>Buy Lottery Tickets</h2>
+
+            <form id="buyTicketForm">
+                <label for="numberOfTickets">Number of Tickets:</label>
+                <input type="number" id="numberOfTickets" name="numberOfTickets" min="1" required>
+                <button type="submit">Buy</button>
+            </form>
+            
+        <h2>Time Remaining</h2>
+        <p id="timer">00:00:00</p>
+  
+            <section>
+            <h2>Players</h2>
+            <ul id="playersList"></ul>
+        </section>
+            
+            
+        </section>
+        
+        
+        
+        
+       
+    <section>
+        <h2>Draw History</h2>
+        <table id="drawHistoryTable">
+            <thead>
+                <tr>
+                    <th>Winner</th>
+                    <th>Prize</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
